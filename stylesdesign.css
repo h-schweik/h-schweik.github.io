@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/gill-sans-mt-2');
+
+.t_gs{
+	font-family: "Gill Sans MT", sans-serif;
+	font-weight: bolder;
+	letter-spacing: 0px;}
+
+.t_pfd{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;}
+
+* {box-sizing: border-box;}
+
+html {
+	--dark: rgb(16, 0, 0);
+	--standard: rgb(122, 37, 37);
+	--light: rgb(255, 237, 216);
+	--yellow: rgb(255, 193, 86);
+	--red: rgb(190, 76, 76);}
+
+.row {
+  display: flex; 
+  max-height: 100%;
+  max-width: 100%;
+	margin: 20px;
+  padding: 0 20px 0 20px;
+}
+
+.column {
+  flex: 25%; 
+  max-height: 100%;
+  max-width: 100%;
+  padding: 10px;
+}
+
+
+.column img{
+  width: 100%;
+  background-color: var(--yellow);
+}
+  
+
+.row img{
+	align-items: stretch;
+	background-color: var(--yellow);
+	border-style: solid;
+	border-width: 5px 2px 10px 2px;
+	border-color: var(--dark);
+}
+
+
+
+div p {
+	font-size: 25px;
+	color: var(--standard);
+}
+
+div a{
+	color: var(--dark);
+	font-size: 50px;
+	margin: 10px;
+}
+
+div h2{
+	color: var(--light);
+	font-size: 25px;
+	margin: 10px;
+	text-align: center;
+}
+
+div h3{
+	color: var(--light);
+	font-size: 25px;
+	margin: 10px;
+}
+
+
+body {
+	font-family: Roboto;
+	font-kerning: auto;
+	letter-spacing: -1px;
+	margin: 0px;}
+
+.menu {
+	background-color: var(--dark);}
+
+nav {
+	display: flex;
+	justify-content: center;
+	width: 960px;
+	margin: auto;}
+
+nav a {
+	margin: 2px 20px 12px 20px;
+	padding: 10px 80px 1px 80px;
+	font-size: 22px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	flex: 0 0 auto;
+	border-bottom: 2px solid currentColor;}
+
+nav a:hover {
+	background-color: #333333;}
+
+
+header {
+	display: grid;
+	grid-template-columns: 1fr 960px 1fr;
+	background-color: var(--yellow);
+	min-height: 420px;}
+
+header video {
+	grid-row: 1;
+	grid-column: 1 / -1;
+	z-index: 0;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center center;
+	mix-blend-mode: multiply;
+	opacity: 20%;
+	overflow: hidden;
+	height: 500px;}
+
+.logo{
+	display: center;
+	align-content: center;
+	margin: auto;
+	padding: auto;}
+
+header div {
+	grid-row: 1;
+	grid-column: 2;
+	z-index: 1;
+	display: grid;
+	align-content: center;
+	justify-content: center;}
+
+header div h1{
+	color: var(--dark);
+	font-size: 70px;
+	padding: 0px;
+	margin: 0px auto;}
+
+header div h2 {
+	color: var(--dark);
+	padding: 0px;
+	margin: 0px auto;
+	text-decoration: overline;
+	font-size: 20px;}
+
+
+body {
+	background-color: var(--dark);
+	margin: 0}
+
+
+footer {
+	background-color: var(--dark);}
+
+
+
